@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form-pembelian-barang</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+      function hitungtotal(){
+            var namabarang=(document.ffrom.namabarang.value);
+            var jumlah=(document.ffrom.jumlah.value);
+            var harga=0.0;
+            var total=0.0;
+
+            if(namabarang=="keyboard"){
+                harga=35000;
+            }else if(namabarang=="monitor"){
+                harga=1500000;
+            }else if(namabarang=="mouse"){
+                harga=40000;
+            }
+
+            total=harga*jumlah;
+            document.ffrom.harga.value=eval(harga);
+            document.ffrom.total.value=eval(total);
+      }
+    </script>
+     <style>
+        body{
+          padding-right: 300px;
+          padding-left: 300px;     
+        }
+        h1{
+         text-align: center;
+         font-family: 'times new roman';
+         font-weight: bold;
+         padding-top: 3rem;
+        }  
+        form{
+          padding-left: 100px;
+          font-size: 20px;
+        }
+        hr.style1.style2{
+            height: 15px;
+        }
+      </style>
+</head>
+<body>
+    <div class="class container">
+    <h1>PROGRAM PEMBELIAN BARANG</h1>
+    <hr class="style1">
+    <form name="ffrom">
+      <table>
+        <tr>
+            <td>
+                <div class="row">
+                 <label for="inputnamabarang" class=" col-form-label">Nama Barang</label>
+                    <div class="col-sm-3">
+                        <td>
+                        <select class="form-select" aria-label="Pilih Barang" id="namabarang" name="namabarang">
+                            <option value="keyboard">Keyboard</option>
+                            <option value="monitor">Monitor</option>
+                            <option value="mouse">Mouse</option>
+                        </select>
+                    </td>
+                    </div>
+                </div>
+            </td>
+            </tr>
+            <tr>
+                <td><label  class="col-sm-2 col-form-label">Jumlah</label></td>
+                <td><input type="text" class="form-control"  name="jumlah"></td>  
+            </tr> 
+            <tr>
+                <td><label  class="col-sm-2 col-form-label">Harga</label></td>
+                <td><input type="text" class="form-control"  name="harga"></input></td>
+            </tr>
+            <tr>
+                <td><label  class="col-sm-2 col-form-label">Total</label></td>
+                <td><input type="text" class="form-control"  name="total"></input></td>  
+            </tr>
+      </table>
+      <pre><br></pre> 
+        <input  type="button" value="Proses" onclick="hitungtotal()">
+        <input type="reset" value="Reset">  
+      </form>
+      <hr class="style2">
+    </div>
+</body>
+</html> 
