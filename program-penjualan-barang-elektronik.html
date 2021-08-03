@@ -7,7 +7,7 @@
 
     <script>
       function proses(){
-           // var namabarang=(document.ffrom.namabarang.value);
+            var namabarang=(document.ffrom.namabarang.value);
             var jumlah=(document.ffrom.jumlah.value);
             var harga=(document.ffrom.harga.value);
             var harga1=0.0;
@@ -31,7 +31,7 @@
             total=subtotal; 
             pajak=subtotal*0.1;             
             bayar=total+pajak;
-            //document.ffrom.harga.value=eval(harga);
+            document.ffrom.harga.value=eval(harga);
             document.ffrom.total.value=eval(total);
             document.ffrom.pajak.value=eval(pajak);
             document.ffrom.bayar.value=eval(bayar);
