@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>program-kredit-rumah</title>
+    <script>
+        function proses(){
+            var type_rumah=(document.from1.type_rumah.value);
+            var harga=(document.from1.harga.value);
+            var lama_kredit=(document.from1.lamakredit.value);
+            var angsuran=(document.from1.angsuran.value);
+            var sisa=(document.from.sisa.value);
+            var bln;
+            if(type_rumah==alamanda){
+                type_rumah="Alamada";
+                harga="120000000";
+                uang_muka="24000000";
+                sisa="26000000";
+                lama_kredit="24"
+                angsuran="4000000";              
+            }
+            else if (type_rumah==mawar){
+                type_rumah="Alamada";
+                harga="120000000";
+                uang_muka="24000000";
+                sisa="26000000";
+                lama_kredit="24"
+                angsuran="4000000";                
+                }
+
+            document.from2.type_rumah2.value=eval(type_rumah);
+            document.from2.harga2.value=eval(harga);
+            document.from2.uang_muka2.value=eval(uang_muka);
+            document.from2.sisa2.value=eval(sisa);
+            document.from2.lama_kredit2.value=eval(lama_kredit);
+            document.from2.angsuraninput.value=eval(angsuran);
+            
+
+        }
+    </script>
+    <style>
+        body{
+            padding-top: 100px;
+        }
+        h2{
+         text-align: center;
+         font-family: 'times new roman';
+         font-weight: bold;
+        }  
+        h4{
+         text-align: center;
+         font-family: 'times new roman';
+         font-weight: bold;
+        }  
+        
+      </style>
+  </head>
+  <body>
+      <form class="from1">
+        <div class="container">
+            <div class="row justify-content-around" >
+                <div class="col-6">
+                    <h2>PROGRAM KREDIT RUMAH</h2>
+                    <hr>
+                    <table>
+                      <tr>
+                        <td>Type Rumah&emsp;</td>
+                        <td>
+                            <select class="form-select" aria-label="type_rumah" id="type_rumah" name="type_rumah">
+                                <option value="alamanda">Alamanda</option>
+                                <option value="mawar">Mawar</option>
+                            </select>
+                        </td>
+                    </tr>                
+                      <tr>
+                        <td>Lama Kredit </td>
+                        <td><input type="text" name="lama_kredit"></td>  
+                    </tr>
+                    </table>
+                    <hr>
+                    <input  type="button" value="Proses" onclick="proses()">
+                    <input type="reset" value="Reset">
+                    </div>
+                   
+      </form>
+      
+        <div class="col-4">
+            <from class="from2"></from>
+            <h5>PROGRAM KREDIT RUMAH</h5>
+            <table>
+                <tr>
+                    <td>Type Rumah&ensp; = </td>
+                    <td><input type="text" name="type_rumah2"></input></td>
+                </tr>
+                <tr>
+                   <td>Harga Rumah  =</td>
+                   <td><input type="text" name="harga2"></input></td>
+               </tr>
+               <tr>
+                   <td>Uang Muka &emsp;= </td>
+                   <td><input type="text" name="uang_muka2"></input></td>
+               </tr>
+               <tr>
+                   <td>Sisa &emsp;&emsp;&emsp;&emsp; = </td>
+                   <td><input type="text" name="sisa2"></input></td>
+               </tr>
+               <tr>
+                   <td>Lama Kredit &ensp; = </td>
+                   <td><input type="text" name="lama_kredit2"></input></td>
+               </tr>
+               <tr>
+                   <td>Angsuran &emsp;&ensp; = </td>
+                   <td><input type="text" name="angsuran2"></input></td>
+               </tr>
+            </table>
+            <br>
+            
+           </div>
+       </div>
+       
+   </div>
+</div>
+
+
+      </from>
+               
+               
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
