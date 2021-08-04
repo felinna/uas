@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form-penjualan-barang-elektronik</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+     function proses(){
+         var nama=(document.ffrom.nama_pelanggan.value);
+         var kategori=(document.ffrom.kategori.value);
+         var jlh_pemakaian=(document.ffrom.jlh_pemakaian.value);
+         document.writeln("<h2>Tagihan Listrik</h2>");
+         document.writeln("--------------------------"+"<br>");
+         document.writeln("Nama Pelanggan   :"+"<br>");
+         document.writeln("Kategori         :"+"<br>");
+         document.writeln("Jumlah Pemakaian :"+"<br>");
+         document.writeln("--------------------------");
+
+         for
+     }
+    </script>
+     <style>
+        body{
+          padding-right: 300px;
+          padding-left: 300px;     
+        }
+        h4{
+         text-align: center;
+         font-family: 'times new roman';
+         font-weight: bold;
+         padding-top: 3rem;
+        }  
+        form{
+          padding-left: 100px;
+
+        }
+        hr.style1.style2{
+            height: 15px;
+        }
+      </style>
+</head>
+<body>
+    <div class="class container">
+    <h4>TAGIHAN LISTRIK</h4>
+    <hr class="style1">
+    <form name="ffrom">
+      <table>
+       <div class="class col-sm-3">
+        <tr>
+            <td><label  class="col-s-2 col-form-label ">Nama Pelanggan </label></td>
+            <td><input type="text" class="form-control mb-2"  name="nama_pelanggan" placeholder="Nama Pelanggan"></td>  
+        </tr>
+       </div>    
+       <tr>
+           <td> Kategori </td>
+               <div class="col-sm-3">
+                   <td>
+                   <select class="form-select mb-2" aria-label="Pilih kategori" id="kategori" name="kategori">
+                       <option value="sosial">Sosial</option>
+                       <option value="rumah">Rumah</option>
+                       <option value="industri">Industri</option>
+                   </select>
+                    </td>
+               </div>          
+      </tr> 
+        <tr>
+                <td><label  class="col-s-2 col-form-label">Jumlah Pemakaian Listrik&ensp;</label></td>
+                <td><input type="text" class="form-control"  name="jlh_pemakaian" placeholder="Masukan pemakaian"></input></td>  
+        </tr>
+      </table>
+      <br>
+        <input  type="button" value="Proses" onclick="proses()">
+        <input type="reset" value="Reset">  
+      </form>
+      <hr class="style2">
+    </div>
+</body>
+</html> 
